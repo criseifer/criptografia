@@ -10,17 +10,21 @@
 <body>
     <header> <img src="fotocabecalho.png" alt="logo alura no cabecalho"> </header>
     <main class="apresentacao"> 
-        <section class="apresentacao_conteudo_esquerda">
-                 <h1 class="apresentacao_conteudo_titulo_esquerda"> Digite seu texto </h>
-                <textarea class="apresentacao_quadro_input" placeholder="Escreva aqui o que quer modificar"></textarea>
+        <section class="apresentacao_conteudo">
+                 <h1 class="apresentacao_conteudo_titulo"> Digite seu texto </h>
+                    <textarea class="text-area" placeholder="Digite aqui"></textarea>
                     <div class="apresentacao_botoes">
-                    <button onclick="criptoGrafar()" class="botoes">Criptografar</button>
-                    <button onclick="descriptoGrafar()" class="botoes">Descriptografar</button>   
+                    <button class="botoes" onclick="btneEncriptar()">Criptografar</button>
+                    <button class="botoes" onclick="btneDesencriptar()" >Descriptografar</button>   
                     </div>
-                <p class="apresentacao_conteudo_texto_esquerda"> letras maiúsculas e caracteres especiais não serão aceitos</p>                      
+                <p class="apresentacao_conteudo_texto"> letras maiúsculas e caracteres especiais não serão aceitos</p>                      
         </section>
-        <img src="1.PNG.png" alt="foto do decodificador">       
-    
+
+        <section class="apresentacao_conteudo"></section>
+            <h1 class="apresentacao_conteudo_titulo"> Resultado </h>
+                <textarea class="mensagem" placeholder="Resultado vai aparecer aqui"></textarea>
+                <button onclick="copiarresultado()" class="botoes">Copiar</button>   
+            </section>  
 
     </main>
     
